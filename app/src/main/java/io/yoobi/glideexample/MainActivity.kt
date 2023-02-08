@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
                 .downloadOnly()
                 .load(SPRITE)
                 .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .submit().get()
         }
 
